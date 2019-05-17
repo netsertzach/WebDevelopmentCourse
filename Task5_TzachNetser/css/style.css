@@ -15,13 +15,14 @@ h1{
 .banner {
     background: url('../img/banner.jpg') center center no-repeat;
     background-size: cover;
-    height: 90vh;
-    padding-top: 15vh;
-  
+    height: 85vh;
+    padding: 10vh;
+     
 }
 
 .content{
-    padding: 30px 10px;
+   
+    padding: 20px 10px;
     background-color: rgba( 255, 255, 255, 0.7 );
     border-radius: 10px;
 }
@@ -46,22 +47,29 @@ h1{
 
 
 @media (min-width: 576px) {
-
 }
 
 
-@media (min-width: 768px) { }
+@media (min-width: 768px) {
+    .content {
+        padding: 10px 5px;
+    }
+    .banner {
+        height: 90vh;
+    }
+}
 
 
 @media (min-width: 992px) {
     .content {
         padding: 50px 10px;
     }
+    
 }
 
 @media (min-width: 1200px) {
     .content {
         padding: 80px 10px;
     }
-
+    
 }
