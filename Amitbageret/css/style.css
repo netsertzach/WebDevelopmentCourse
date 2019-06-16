@@ -1,0 +1,92 @@
+body{
+    direction: rtl;
+    text-align: right;
+    background-color: #ddb69c;
+    font-family: Calibri, sans-serif, Arial, Verdana, "Trebuchet MS";
+}
+p, a, h1, h2, h3, h4, h5, h6, span{
+    font-family: inherit;
+}
+
+img{
+    max-width: 100%;
+}
+
+header{
+    border-bottom: 20px solid #fff;
+}
+
+
+.home-slogan {
+    color: #175352;
+    font-size: 55px;
+	margin-top: 40px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link,
+.navbar-light .navbar-nav .nav-link{
+    color: #175352;
+    font-size: 20px;
+}
+
+nav.navbar {
+   width:95%;
+   position=center;
+    
+    
+}
+nav.navbar .active{
+    text-decoration: underline;
+	color#fff
+}
+
+.bubbles-ver{
+    background: url('../images/bubbles-vertical.png') repeat-y;
+	
+}
+footer{
+    min-height: 70px;
+    background: url('../images/bubbles-horizantal.png') repeat-x;
+	text-align: center;
+	
+	}
+
+.circleBase {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    background: #7a9f8e;
+    overflow: hidden;
+}
+
+
+/* Animation */
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+@media (min-width: 576px) {
+
+}
+
+
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 992px) {
+
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1336px;
+    }
+}
