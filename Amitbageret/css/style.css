@@ -8,51 +8,114 @@ p, a, h1, h2, h3, h4, h5, h6, span{
     font-family: inherit;
 }
 
+.circleBase{
+	margin-right:100px;
+}
+
 img{
     max-width: 100%;
-}
-
-header{
-    border-bottom: 20px solid #fff;
-}
-
-
-.home-slogan {
-    color: #175352;
-    font-size: 55px;
-	margin-top: 40px;
-}
-
-.navbar-light .navbar-nav .active>.nav-link,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link,
-.navbar-light .navbar-nav .nav-link{
-    color: #175352;
-    font-size: 20px;
-}
-
-nav.navbar {
-   width:95%;
-   position=center;
-    
-    
-}
-nav.navbar .active{
-    text-decoration: underline;
-	color#fff
-}
-
-.bubbles-ver{
-    background: url('../images/bubbles-vertical.png') repeat-y;
 	
 }
-footer{
+
+.mt-10{
+    margin-top: 5rem;
+}
+.negative-margin{
+    margin-top: -2rem;
+}
+
+header.header{
+    border-bottom: 20px solid #fff;
+    margin-bottom: 30px;
+	
+}
+header nav{
+    display: none;
+    position: fixed;
+    width:inherit;
+    max-width:inherit;
+    padding-top: 20px;
+	margin-right: -53px;
+	background-color:#ddb69c;
+	
+	z-index:10;
+}
+.bubbles-ver {
+    background: url(../images/bubbles-vertical.png) repeat-y;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    color: #175352;
+    font-size: 18px;
+}
+header nav ul li a.active{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.my-slide h1 {
+    color: #175352;
+    font-size: 48px;
+	
+}
+.my-slide h1 span{
+    font-weight: bold;
+}
+
+.my-card{
+    background-color: #fff;
+}
+
+.my-card header{
+    padding-top: 5px;
+}
+.my-card header h1{
+    color: #175352;
+    font-weight: bold;
+    font-size: 32px;
+}
+.my-card .dots{
+    font-size: 32px;
+    font-weight: bold;
+}
+.my-card .button{
+    background-color: #175352;
+    color: white;
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+.my-card .card-image{
+    margin-bottom: 10px;
+}
+.my-card .card-content,
+.my-card footer{
+    width: 95%;
+    margin: 0 auto;
+}
+.my-card footer {
+    border-top: 2px solid black;
+    padding: 10px 0;
+}
+
+
+
+
+
+footer.footer{
     min-height: 70px;
     background: url('../images/bubbles-horizantal.png') repeat-x;
-	text-align: center;
-	
-	}
+
+}
 
 .circleBase {
     border-radius: 50%;
