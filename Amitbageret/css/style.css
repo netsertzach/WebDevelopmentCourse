@@ -8,13 +8,8 @@ p, a, h1, h2, h3, h4, h5, h6, span{
     font-family: inherit;
 }
 
-.circleBase{
-	margin-right:100px;
-}
-
 img{
     max-width: 100%;
-	
 }
 
 .mt-10{
@@ -24,29 +19,35 @@ img{
     margin-top: -2rem;
 }
 
+.top-wrapper{
+    background-color: #fff;
+	opacity:0.8;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav-logo,
+.main-logo{
+
+}
 header.header{
     border-bottom: 20px solid #fff;
     margin-bottom: 30px;
-	
 }
 header nav{
-    display: none;
-    position: fixed;
-    width:inherit;
-    max-width:inherit;
-    padding-top: 20px;
-	margin-right: -53px;
-	background-color:#ddb69c;
-	
-	z-index:10;
+    padding-top: 12px;
 }
-.bubbles-ver {
-    background: url(../images/bubbles-vertical.png) repeat-y;
+
+main{
+
 }
 
 header nav ul {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 header nav ul li{
     list-style: none;
@@ -61,11 +62,9 @@ header nav ul li a.active{
     text-decoration: underline;
 }
 
-
 .my-slide h1 {
     color: #175352;
-    font-size: 48px;
-	
+    font-size: 54px;
 }
 .my-slide h1 span{
     font-weight: bold;
@@ -109,11 +108,13 @@ header nav ul li a.active{
 
 
 
-
+.bubbles-ver{
+    background: url('../images/bubbles-vertical.png') repeat-y;
+}
 
 footer.footer{
-    min-height: 70px;
-    background: url('../images/bubbles-horizantal.png') repeat-x;
+    min-height: 81px;
+    background: url('../images/bubbles-horizontal.png') repeat-x;
 
 }
 
@@ -144,7 +145,11 @@ footer.footer{
 
 
 @media (min-width: 992px) {
-
+.container {
+        max-width: 1336px;
+    }
+    .my-slide h1 {
+        font-size: 44px;
 }
 
 
@@ -152,4 +157,10 @@ footer.footer{
     .container {
         max-width: 1336px;
     }
+    .my-slide h1 {
+        font-size: 64px;
+    }
+}
+
+@media (min-width: 1400px) {
 }
