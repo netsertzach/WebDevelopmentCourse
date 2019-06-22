@@ -18,21 +18,27 @@ $('.girl-home').on( 'mousemove', function( evt ) {
 
 $(window).scroll(function() {
     if ($(this).scrollTop() > 40) {
-        $('.nav-logo').css({
+        /*$('.nav-logo').css({
             'visibility': 'visible'
         });
         $('.main-logo').css({
             'visibility': 'hidden'
+        });*/
+        $( '.main-logo img' ).css({
+            'height': '50px'
         });
         $( '.top-wrapper' ).css({
-           'height': '70px'
+           'height': '50px'
         });
     } else {
-        $('.nav-logo').css({
+        /*$('.nav-logo').css({
             'visibility': 'hidden'
         });
         $('.main-logo').css({
             'visibility': 'visible'
+        });*/
+        $( '.main-logo img' ).css({
+            'height': '130px'
         });
         $( '.top-wrapper' ).css({
             'height': '130px'
@@ -68,6 +74,20 @@ $( "#target" ).dblclick(function() {
     alert( "Handler for .dblclick() called." );
 });
 
+
+$( '.card-image' ).on( 'dblclick', function ( event ) {
+    var id = $( this ).find( '.featured-image' ).data( 'id' );
+    if( $( '#'+id ).attr( 'src') === 'images/red-heart.png' ) {
+        $( '#'+id ).attr('src', 'images/black-heart-empty.png');
+    } else {
+        $( '#'+id ).attr('src', 'images/red-heart.png');
+    }
+
+    $( this ).find('.heart-animation').css( 'opacity', 0.7 );
+    setTimeout( function(){
+        $('.heart-animation').css( 'opacity', 0 );
+    }, 750 );
+} );
 /*
 adjustWidth();
 function adjustWidth() {

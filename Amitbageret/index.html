@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="he">
     <head>
         <meta charset="UTF-8">
@@ -16,32 +16,72 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-3 col-lg-5">
                         <a href="index.html" class="main-logo">
-                            <img src="images/logo-home.png" alt="לוגו" width="300px">
+                            <img src="images/logo-home.png" alt="לוגו">
                         </a>
                     </div>
                     <div class="col-sm-12 col-md-9 col-lg-7 nav-container">
                         <nav class="site-nav">
                             <ul>
-                                <li>
-                                    <a href="index.html" style="visibility: hidden;"  class="nav-logo">
-                                        <img src="images/logo-home.png" alt="לוגו" width="100px">
-                                    </a>
+                                <li class="has-submenu">
+                                    <a href="changes.html">שינויים שקורים לי</a>
+
+                                    <ul class="submenu">
+                                        <li class="submenu-item">
+                                            <a href="changes.html#my-body">אני והגוף שלי</a>
+                                        </li>
+                                        <li class="submenu-item disabled">
+                                            <a href="#">איך אני מרגישה?</a>
+                                        </li>
+                                    </ul>
+
                                 </li>
 
-                                <li>
-                                    <a href="changes.html">שינויים שקורים לי</a>
+                                <li class="has-submenu">
+                                    <a href="coping.html">התמודדות עם...</a>
+                                    <ul class="submenu">
+                                        <li class="submenu-item">
+                                            <a href="coping.html#family">  המשפחה</a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="coping.html#friends">  החברות</a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="coping.html#boyfriend">  החבר/ה</a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="coping.html#school">  הלימודים</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                |
-                                <li>
-                                    <a href="coping.html">התמודדות</a>
-                                </li>
-                                |
-                                <li>
+
+                                <li class="has-submenu">
                                     <a href="healthy.html">לחיות בריא</a>
+                                    <ul class="submenu">
+                                        <li class="submenu-item">
+                                            <a href="healthy.html#food">תזונה נכונה</a>
+                                        </li>
+                                        <li class="submenu-item disabled">
+                                            <a href="#">פעילות גופנית</a>
+                                        </li>
+                                        <li class="submenu-item disabled">
+                                            <a href="#">לישון ולקום</a>
+                                        </li>
+                                        <li class="submenu-item disabled">
+                                            <a href="#">אלכוהול וסגריות</a>
+                                        </li>
+                                    </ul>
                                 </li>
-                                |
-                                <li>
+
+                                <li class="has-submenu">
                                     <a href="info.html">מה עוד צריך לדעת</a>
+                                    <ul class="submenu">
+                                        <li class="submenu-item">
+                                            <a href="info.html#myth">מיתוסים</a>
+                                        </li>
+                                        <li class="submenu-item">
+                                            <a href="info.html#faq">שאלות נפוצות</a>
+                                        </li>
+                                    </ul>
                                 </li>
                             </ul>
                         </nav>
@@ -51,13 +91,13 @@
         </div>
         <div class="container">
             <div class="row" style="margin-top: 160px;">
-                <div class="col-8" style="overflow: hidden;">
+                <div class="col-7 mr-5" style="overflow: hidden;">
                     <div class="circleBase" style="margin-bottom: -50px;">
                         <img src="images/girl-first.png" class="girl-home" alt="">
                     </div>
 
                 </div>
-                <div class="col-4 pt-3">
+                <div class="col-4 pt-4 mt-4">
                     <div class="home-slide">
                         <div class="my-slide">
                             <h1>
@@ -67,7 +107,7 @@
                                 <br>
                                 אם אומרים לך
                                 <br>
-                                תביני כשתתבגרי
+                                מתי תתבגרי כבר
                             </h1>
                         </div>
                         <div class="my-slide">
@@ -102,6 +142,8 @@
             <div class="row">
                 <div class="col-1 bubbles-ver" style="background-position: right top;">
                 </div>
+
+
                 <div class="col-10">
 
 
@@ -119,8 +161,8 @@
                                         </div>
                                         <div class="col-2 text-center">
                                             <span class="dots">
-                                            ...
-                                                </span>
+                                                ...
+                                            </span>
                                         </div>
                                     </div>
                                 </header>
@@ -128,7 +170,10 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="card-image">
-                                                <img src="images/bowl-932980_1920.jpg" alt="">
+                                                <img src="images/bowl-932980_1920.jpg" class="featured-image" alt="" data-id="heart-1">
+                                                <div class="heart-animation">
+                                                    <img src="images/heart-animation.png" alt="">
+                                                </div>
                                             </div>
                                             <div class="card-content">
                                                 <h3 class="text-center">הכל על איך לאכול נכון</h3>
@@ -148,7 +193,7 @@
                                 <footer>
                                     <div class="row">
                                         <div class="col-6">
-                                            <img src="images/black-heart-empty.png" alt="" class="heart" width="40">
+                                            <img src="images/black-heart-empty.png" alt="" class="heart" width="40" id="heart-1">
                                         </div>
                                         <div class="col-6">
                                             <a href="" class="button">
@@ -168,12 +213,12 @@
                                             <img src="images/eat-healthy.png" alt="">
                                         </div>
                                         <div class="col-8 text-center">
-                                            <h1>עשי ואל תעשי</h1>
+                                            <h1>לימודים</h1>
                                         </div>
                                         <div class="col-2 text-center">
                                             <span class="dots">
-                                            ...
-                                                </span>
+                                                ...
+                                            </span>
                                         </div>
                                     </div>
                                 </header>
@@ -181,17 +226,20 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="card-image">
-                                                <img src="images/bowl-932980_1920.jpg" alt="">
+                                                <img src="images/school.jpg" class="featured-image" alt="" data-id="heart-2">
+                                                <div class="heart-animation">
+                                                    <img src="images/heart-animation.png" alt="">
+                                                </div>
                                             </div>
                                             <div class="card-content">
-                                                <h3 class="text-center">הכל על איך לאכול נכון</h3>
+                                                <h3 class="text-center">נמאס לי מבית הספר</h3>
                                                 <div class="abstract">
                                                     <p>
-                                                        כל כמה זמן צריך לאכול?
+                                                        שונאת את בית הספר, שונאת את המורים,
                                                         <br>
-                                                        כמה פירות כדאי לי לאכול ביום? כמה כוסות מים.
+                                                        שונאת את שיעורי הבית.
                                                         <br>
-                                                        ואיך נקניקיות קשורות לכל הסיפור?
+                                                        האמת היא, שאני באה רק בגלל ההפסקה.
                                                     </p>
                                                 </div>
                                             </div>
@@ -201,7 +249,7 @@
                                 <footer>
                                     <div class="row">
                                         <div class="col-6">
-                                            <img src="images/black-heart-empty.png" alt="" class="heart" width="40">
+                                            <img src="images/black-heart-empty.png" alt="" class="heart" width="40" id="heart-2">
                                         </div>
                                         <div class="col-6">
                                             <a href="" class="button">
@@ -221,12 +269,12 @@
                                             <img src="images/eat-healthy.png" alt="">
                                         </div>
                                         <div class="col-8 text-center">
-                                            <h1>עשי ואל תעשי</h1>
+                                            <h1>אמת או שקר?</h1>
                                         </div>
                                         <div class="col-2 text-center">
                                             <span class="dots">
-                                            ...
-                                                </span>
+                                                ...
+                                            </span>
                                         </div>
                                     </div>
                                 </header>
@@ -234,17 +282,20 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="card-image">
-                                                <img src="images/bowl-932980_1920.jpg" alt="">
+                                                <img src="images/question.jpg" class="featured-image" alt="" data-id="heart-3">
+                                                <div class="heart-animation">
+                                                    <img src="images/heart-animation.png" alt="">
+                                                </div>
                                             </div>
                                             <div class="card-content">
-                                                <h3 class="text-center">הכל על איך לאכול נכון</h3>
+                                                <h3 class="text-center">אני והחברה מקבלות יחד</h3>
                                                 <div class="abstract">
                                                     <p>
-                                                        כל כמה זמן צריך לאכול?
+                                                        המון פעמים אנחנו שומעות מידע מחברות
                                                         <br>
-                                                        כמה פירות כדאי לי לאכול ביום? כמה כוסות מים.
+                                                        ולא תמיד הוא נכון. בואי לגלות כל מה שלא
                                                         <br>
-                                                        ואיך נקניקיות קשורות לכל הסיפור?
+                                                        ידעת...
                                                     </p>
                                                 </div>
                                             </div>
@@ -254,7 +305,7 @@
                                 <footer>
                                     <div class="row">
                                         <div class="col-6">
-                                            <img src="images/black-heart-empty.png" alt="" class="heart" width="40">
+                                            <img src="images/black-heart-empty.png" alt="" class="heart" width="40" id="heart-3">
                                         </div>
                                         <div class="col-6">
                                             <a href="" class="button">
@@ -274,12 +325,12 @@
                                             <img src="images/eat-healthy.png" alt="">
                                         </div>
                                         <div class="col-8 text-center">
-                                            <h1>עשי ואל תעשי</h1>
+                                            <h1>חבר חבר חבר!</h1>
                                         </div>
                                         <div class="col-2 text-center">
                                             <span class="dots">
-                                            ...
-                                                </span>
+                                                ...
+                                            </span>
                                         </div>
                                     </div>
                                 </header>
@@ -287,17 +338,20 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="card-image">
-                                                <img src="images/bowl-932980_1920.jpg" alt="">
+                                                <img src="images/boyfriend.jpg" class="featured-image" alt="" data-id="heart-4">
+                                                <div class="heart-animation">
+                                                    <img src="images/heart-animation.png" alt="">
+                                                </div>
                                             </div>
                                             <div class="card-content">
-                                                <h3 class="text-center">הכל על איך לאכול נכון</h3>
+                                                <h3 class="text-center">למה הוא כזה מעצבן</h3>
                                                 <div class="abstract">
                                                     <p>
-                                                        כל כמה זמן צריך לאכול?
+                                                        חבר שלי פשוט מעצבן ולא מבין אותי. אנחנו
                                                         <br>
-                                                        כמה פירות כדאי לי לאכול ביום? כמה כוסות מים.
+                                                        רבים מלא. ואני כבר לא יודעת מה לעשות.
                                                         <br>
-                                                        ואיך נקניקיות קשורות לכל הסיפור?
+                                                        החברות אומרות לי להיפרד ממנו, אבל אני לא רוצה.
                                                     </p>
                                                 </div>
                                             </div>
@@ -307,7 +361,7 @@
                                 <footer>
                                     <div class="row">
                                         <div class="col-6">
-                                            <img src="images/black-heart-empty.png" alt="" class="heart" width="40">
+                                            <img src="images/black-heart-empty.png" alt="" class="heart" width="40" id="heart-4">
                                         </div>
                                         <div class="col-6">
                                             <a href="" class="button">
@@ -327,12 +381,12 @@
                                             <img src="images/eat-healthy.png" alt="">
                                         </div>
                                         <div class="col-8 text-center">
-                                            <h1>עשי ואל תעשי</h1>
+                                            <h1>ווסת או מחזור?</h1>
                                         </div>
                                         <div class="col-2 text-center">
                                             <span class="dots">
-                                            ...
-                                                </span>
+                                                ...
+                                            </span>
                                         </div>
                                     </div>
                                 </header>
@@ -340,17 +394,20 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <div class="card-image">
-                                                <img src="images/bowl-932980_1920.jpg" alt="">
+                                                <img src="images/19094.jpg" class="featured-image" alt="" data-id="heart-5">
+                                                <div class="heart-animation">
+                                                    <img src="images/heart-animation.png" alt="">
+                                                </div>
                                             </div>
                                             <div class="card-content">
-                                                <h3 class="text-center">הכל על איך לאכול נכון</h3>
+                                                <h3 class="text-center">איזה מילים מוזרות</h3>
                                                 <div class="abstract">
                                                     <p>
-                                                        כל כמה זמן צריך לאכול?
+                                                        הרבה פעמים במהלך שיחות על המחזור,
                                                         <br>
-                                                        כמה פירות כדאי לי לאכול ביום? כמה כוסות מים.
+                                                        המורה משתמשת במילים מוזרות כמו ווסת והורמונים.
                                                         <br>
-                                                        ואיך נקניקיות קשורות לכל הסיפור?
+                                                        מה זה אומר?
                                                     </p>
                                                 </div>
                                             </div>
@@ -360,7 +417,7 @@
                                 <footer>
                                     <div class="row">
                                         <div class="col-6">
-                                            <img src="images/black-heart-empty.png" alt="" class="heart" width="40">
+                                            <img src="images/black-heart-empty.png" alt="" class="heart" width="40" id="heart-5">
                                         </div>
                                         <div class="col-6">
                                             <a href="" class="button">
@@ -380,30 +437,33 @@
                                             <img src="images/eat-healthy.png" alt="">
                                         </div>
                                         <div class="col-8 text-center">
-                                            <h1>עשי ואל תעשי</h1>
+                                            <h1>כלום לא מסתדר</h1>
                                         </div>
                                         <div class="col-2 text-center">
                                             <span class="dots">
-                                            ...
-                                                </span>
+                                                ...
+                                            </span>
                                         </div>
                                     </div>
                                 </header>
                                 <section>
                                     <div class="row">
                                         <div class="col-12">
-                                            <div class="card-image" data-heart-id="10">
-                                                <img src="images/bowl-932980_1920.jpg" alt="">
+                                            <div class="card-image">
+                                                <img src="images/upset.jpg" class="featured-image" alt="" data-id="heart-6">
+                                                <div class="heart-animation">
+                                                    <img src="images/heart-animation.png" alt="">
+                                                </div>
                                             </div>
                                             <div class="card-content">
-                                                <h3 class="text-center">הכל על איך לאכול נכון</h3>
+                                                <h3 class="text-center">מה קורה לי?</h3>
                                                 <div class="abstract">
                                                     <p>
-                                                        כל כמה זמן צריך לאכול?
+                                                        אני מרגישה שאני כבר לא מזהה את עצמי
                                                         <br>
-                                                        כמה פירות כדאי לי לאכול ביום? כמה כוסות מים.
+                                                        שאני מסתכלת במראה.
                                                         <br>
-                                                        ואיך נקניקיות קשורות לכל הסיפור?
+                                                        מה קורה פה?
                                                     </p>
                                                 </div>
                                             </div>
@@ -413,7 +473,7 @@
                                 <footer>
                                     <div class="row">
                                         <div class="col-6">
-                                            <img src="images/black-heart-empty.png" alt="" id="10" class="heart" width="40">
+                                            <img src="images/black-heart-empty.png" alt="" class="heart" width="40" id="heart-6">
                                         </div>
                                         <div class="col-6">
                                             <a href="" class="button">
@@ -424,39 +484,207 @@
                                 </footer>
                             </article>
                         </div>
-						<div class="col-12 text-center pt-3">
-                    <p>
-                        כל הזכויות שמורות - 2019
-                        |
-                        <a href="about.html">
-                            אודות
-                        </a>
-                        |
-                        <a href="contact.html">
-                            צור קשר
-                        </a>
-                        |
-                        <a href="site-map.html">
-                            מפת האתר
-                        </a>
-                    </p>
-                </div>
+
+                       
+
+                            <div class="col-4">
+                                <article class="my-card negative-margin">
+                                    <header>
+                                        <div class="row no-gutters">
+                                            <div class="col-2">
+                                                <img src="images/eat-healthy.png" alt="">
+                                            </div>
+                                            <div class="col-8 text-center">
+                                                <h1>כל כך שמנה</h1>
+                                            </div>
+                                            <div class="col-2 text-center">
+                                                <span class="dots">
+                                                    ...
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card-image">
+                                                    <img src="images/diet.jpg" class="featured-image" alt="" data-id="heart-7">
+                                                    <div class="heart-animation">
+                                                        <img src="images/heart-animation.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <h3 class="text-center">אני מרגישה כל כך שמנה</h3>
+                                                    <div class="abstract">
+                                                        <p>
+                                                            כל החברות אומרות לי שאני רזה, אבל כל
+                                                            <br>
+                                                            פעם שאני מכניסה משהו לפה, אני מרגישה
+                                                            <br>
+                                                            שהבטן שלי מתנפחת.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="images/black-heart-empty.png" alt="" class="heart" width="40" id="heart-7">
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="" class="button">
+                                                    להמשך קריאה
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </article>
+                            </div>
+
+                            <div class="col-4 mt-5">
+                                <article class="my-card">
+                                    <header>
+                                        <div class="row no-gutters">
+                                            <div class="col-2">
+                                                <img src="images/eat-healthy.png" alt="">
+                                            </div>
+                                            <div class="col-8 text-center">
+                                                <h1>סידן ו...חלבון?</h1>
+                                            </div>
+                                            <div class="col-2 text-center">
+                                                <span class="dots">
+                                                    ...
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card-image">
+                                                    <img src="images/burger.jpg" class="featured-image" alt="" data-id="heart-8">
+                                                    <div class="heart-animation">
+                                                        <img src="images/heart-animation.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <h3 class="text-center">פחמימות סידן חלבונים</h3>
+                                                    <div class="abstract">
+                                                        <p>
+                                                            אני לא יודעת מה זה אומר.
+                                                            <br>
+                                                            הכל נישמע אותו דבר.
+                                                            <br>
+                                                            וחוץ מזה, אני בכלל צמחונית.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="images/black-heart-empty.png" alt="" class="heart" width="40" id="heart-8">
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="" class="button">
+                                                    להמשך קריאה
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </article>
+                            </div>
+
+                            <div class="col-4">
+                                <article class="my-card negative-margin">
+                                    <header>
+                                        <div class="row no-gutters">
+                                            <div class="col-2">
+                                                <img src="images/eat-healthy.png" alt="">
+                                            </div>
+                                            <div class="col-8 text-center">
+                                                <h1>אח מעצבן</h1>
+                                            </div>
+                                            <div class="col-2 text-center">
+                                                <span class="dots">
+                                                    ...
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </header>
+                                    <section>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card-image">
+                                                    <img src="images/4450.jpg" class="featured-image" alt="" data-id="heart-9">
+                                                    <div class="heart-animation">
+                                                        <img src="images/heart-animation.png" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="card-content">
+                                                    <h3 class="text-center">אח שלי כל הזמן מציק לי</h3>
+                                                    <div class="abstract">
+                                                        <p>
+                                                            אני מרגישה שאני כבר לא רוצה להיות
+                                                            <br>
+                                                            בבית, אחי הקטן כל הזמן רב איתי, ואמא
+                                                            <br>
+                                                            מאשימה אותי. למרות שלא עשיתי כלום.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <footer>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <img src="images/black-heart-empty.png" alt="" class="heart" width="40" id="heart-9">
+                                            </div>
+                                            <div class="col-6">
+                                                <a href="" class="button">
+                                                    להמשך קריאה
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </footer>
+                                </article>
+                            </div>
+                            <div class="col-12 text-center pt-3">
+                                <p>
+                                    כל הזכויות שמורות - 2019
+                                    |
+                                    <a href="about.html">
+                                        אודות
+                                    </a>
+                                    |
+                                    <a href="contact.html">
+                                        צור קשר
+                                    </a>
+                                    |
+                                    <a href="site-map.html">
+                                        מפת האתר
+                                    </a>
+                                </p>
+                            </div>
+                        
+
                     </div>
 
 
-
                 </div>
-
-
-                <div class="col-1 bubbles-ver">
+                <div class="col-1 bubbles-ver" style="background-position: left top;">
                 </div>
-				
             </div>
-			
+
         </main>
         <div class="container">
             <div class="row">
-                
+
                 <div class="col-12">
                     <footer class="footer">
 
