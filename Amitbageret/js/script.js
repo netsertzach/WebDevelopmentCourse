@@ -38,10 +38,10 @@ $(window).scroll(function() {
             'visibility': 'visible'
         });*/
         $( '.main-logo img' ).css({
-            'height': '130px'
+            'height': '100px'
         });
         $( '.top-wrapper' ).css({
-            'height': '130px'
+            'height': '100px'
         });
     }
 });
@@ -56,11 +56,26 @@ $('.home-slide').slick({
     autoplay: true,
     autoplaySpeed: 5000,
     arrows: false,
-    initialSlide: 0,
-    //centerMode: true,
-    //fade: true,
-    //cssEase: 'linear'
+    initialSlide: 0
 });
+
+
+$('.abstract').slick({
+    dots: true,
+    rtl: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    arrows: true,
+    centerMode: false,
+    initialSlide: 0,
+    infinite: false,
+    /*customPaging : function(slider, i) {
+        var thumb = $(slider.$slides[i]).data();
+        return '<a>*' + (i+1) + '</a>';
+    }*/
+});
+
 
 $( '.heart' ).on( 'click', function( event ) {
     if( $( this ).attr( 'src') === 'images/red-heart.png' ) {
@@ -78,15 +93,15 @@ $( "#target" ).dblclick(function() {
 $( '.card-image' ).on( 'dblclick', function ( event ) {
     var id = $( this ).find( '.featured-image' ).data( 'id' );
     if( $( '#'+id ).attr( 'src') === 'images/red-heart.png' ) {
-        $( '#'+id ).attr('src', 'images/black-heart-empty.png');
+        $( '#'+id ).attr('src', 'images/black-heart-empty.png').css('z-index');
     } else {
         $( '#'+id ).attr('src', 'images/red-heart.png');
     }
 
-    $( this ).find('.heart-animation').css( 'opacity', 0.7 );
+    $( this ).find('.heart-animation').css( 'opacity', 0.7 ).css('z-index', 0);
     setTimeout( function(){
-        $('.heart-animation').css( 'opacity', 0 );
-    }, 750 );
+        $('.heart-animation').css( 'opacity', 0 ).css('z-index', -1);
+    }, 850 );
 } );
 /*
 adjustWidth();
