@@ -7,7 +7,7 @@ body{
 p, a, h1, h2, h3, h4, h5, h6, span{
     font-family: inherit;
 }
-
+A:focus:hover {color: lime;}
 img{
     max-width: 100%;
 }
@@ -15,12 +15,27 @@ img{
 .mt-10{
     margin-top: 5rem;
 }
+
+.pr-6{
+    padding-right: 3.5rem !important;
+}
+.pr-7{
+    padding-right: 4.25rem !important;
+}
 .negative-margin{
     margin-top: -2rem;
 }
 
+.small-padding{
+
+}
+.no-padding{
+    padding-right: 0;
+    padding-left: 0;
+}
+
 .top-wrapper{
-    background-color: rgba( 255, 255, 255, 0.8);
+    background-color: rgba( 255, 255, 255, 0.9);
     position: fixed;
     top: 0;
     width: 1336px;
@@ -113,12 +128,13 @@ header nav ul li a.active{
 .my-card .card-image{
     margin-bottom: 10px;
     overflow: hidden;
+	
 }
 .my-card .card-image img{
     transition: transform .4s; /* Animation */
 }
 .my-card .card-image img:hover{
-    transform: scale(1.1);
+    transform: scale(1.01);
 }
 .my-card .card-content,
 .my-card footer{
@@ -149,7 +165,7 @@ header nav ul li a.active{
 }
 
 .abstract-content p{
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .slick-dots{
     bottom: -10px;
@@ -157,6 +173,24 @@ header nav ul li a.active{
 .slick-dotted.slick-slider{
     margin-bottom: 20px;
 }
+
+[dir='rtl'] .slick-next{
+    left: -5px;
+}
+[dir='rtl'] .slick-prev{
+    right: -5px;
+}
+[dir='rtl'] .slick-next:before,
+[dir='rtl'] .slick-prev:before{
+    color:black;
+}
+.slick-prev, .slick-next{
+    z-index: 10;
+}
+.slick-initialized .slick-slide {
+    padding: 0 20px;
+}
+
 .bubbles-ver{
     background: url('../images/bubbles-vertical.png') repeat-y;
 }
@@ -179,6 +213,62 @@ header nav ul li a.active{
 }
 
 
+
+
+
+
+
+#skip{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    list-style: outside none;
+}
+
+#skip li{ list-style-type: none }
+
+#skip a{
+    position: absolute;
+    right: -99999px;
+    top: 30px;
+}
+
+#skip a:focus, #skip a:active{
+    position: relative;
+    right: 0;
+    z-index:9999;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 45px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: -4px !important;
+    /* color information, edit this to suit the colors of your layout */
+    color: #AEAEFE;
+    background: transparent url(transparent.png) repeat scroll 0 0;
+    border: 1px dotted #ffb4db;
+}
+.accessibility{
+    position: absolute;
+    right: -99999px;
+    height: 10px;
+    width: 10px
+}
+
+.accessibility-font {
+    /* First font-size fallback to older browsers*/
+    font-size: 1.25em;
+    font-size: 1.25rem;
+}
+
+.accessibility-contrast {
+    color: #fff;
+    background: #000;
+}
 /* Animation */
 @keyframes caret {
     50% {
@@ -201,7 +291,7 @@ header nav ul li a.active{
         max-width: 1200px;
     }
     .my-slide h1 {
-        font-size: 44px;
+        font-size: 2.75rem;
     }
 }
 
@@ -211,8 +301,11 @@ header nav ul li a.active{
         max-width: 1336px;
     }
     .my-slide h1 {
-        font-size: 62px;
+        font-size: 3.875rem;
     }
+	.my-card .card-image{
+		max-height:200px;
+	}
 }
 
 @media (min-width: 1400px) {

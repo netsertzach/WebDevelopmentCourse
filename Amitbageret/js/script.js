@@ -69,7 +69,7 @@ $('.abstract').slick({
     arrows: true,
     centerMode: false,
     initialSlide: 0,
-    infinite: false,
+    infinite: false
     /*customPaging : function(slider, i) {
         var thumb = $(slider.$slides[i]).data();
         return '<a>*' + (i+1) + '</a>';
@@ -98,11 +98,12 @@ $( '.card-image' ).on( 'dblclick', function ( event ) {
         $( '#'+id ).attr('src', 'images/red-heart.png');
     }
 
-    $( this ).find('.heart-animation').css( 'opacity', 0.7 ).css('z-index', 0);
+    $( this ).find('.heart-animation').css( 'opacity', 0.8 ).css('z-index', 0);
     setTimeout( function(){
         $('.heart-animation').css( 'opacity', 0 ).css('z-index', -1);
-    }, 850 );
+    }, 950 );
 } );
+
 /*
 adjustWidth();
 function adjustWidth() {

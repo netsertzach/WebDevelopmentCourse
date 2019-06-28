@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>המתבגרת</title>
+    <link rel="icon" href="Images/favicon.png">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -13,90 +14,56 @@
     <div class="top-wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12 col-md-3 col-lg-5">
-                    <a href="index.html" class="main-logo">
-                        <img src="images/logo-home.png" alt="לוגו">
-                    </a>
+
+                <div class="col-1 no-padding">
                 </div>
-                <div class="col-sm-12 col-md-9 col-lg-7 nav-container">
-                    <nav class="site-nav">
-                        <ul>
-                            <li class="has-submenu">
-                                <a href="changes.html">שינויים שקורים לי</a>
 
-                                <ul class="submenu">
-                                    <li class="submenu-item">
-                                        <a href="changes.html#my-body">אני והגוף שלי</a>
+                <div class="col-10 no-padding">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3 col-lg-5 small-padding" >
+                            <a href="index.html" class="main-logo">
+                                <img src="images/logo-home.png" alt="לוגו">
+                            </a>
+                            <ul id="skip">
+                                <li><a href="#content-anchor">Skip to content</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 col-md-9 col-lg-7 nav-container no-padding pr-7">
+                            <nav class="site-nav">
+                                <ul>
+                                    <li>
+                                        <a href="changes.html">שינויים שקורים לי</a>
                                     </li>
-                                    <li class="submenu-item disabled">
-                                        <a href="#">איך אני מרגישה?</a>
+                                    <li>
+                                        <a href="coping.html">התמודדות עם...</a>
+                                    </li>
+                                    <li>
+                                        <a href="healthy.html">לחיות בריא</a>
+                                    </li>
+                                    <li>
+                                        <a href="info.html">מה עוד צריך לדעת</a>
                                     </li>
                                 </ul>
-
-                            </li>
-
-                            <li class="has-submenu">
-                                <a href="coping.html">התמודדות עם...</a>
-                                <ul class="submenu">
-                                    <li class="submenu-item">
-                                        <a href="coping.html#family">  המשפחה</a>
-                                    </li>
-                                    <li class="submenu-item">
-                                        <a href="coping.html#friends">  החברות</a>
-                                    </li>
-                                    <li class="submenu-item">
-                                        <a href="coping.html#boyfriend">  החבר/ה</a>
-                                    </li>
-                                    <li class="submenu-item">
-                                        <a href="coping.html#school">  הלימודים</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="has-submenu">
-                                <a href="healthy.html">לחיות בריא</a>
-                                <ul class="submenu">
-                                    <li class="submenu-item">
-                                        <a href="healthy.html#food">תזונה נכונה</a>
-                                    </li>
-                                    <li class="submenu-item disabled">
-                                        <a href="#">פעילות גופנית</a>
-                                    </li>
-                                    <li class="submenu-item disabled">
-                                        <a href="#">לישון ולקום</a>
-                                    </li>
-                                    <li class="submenu-item disabled">
-                                        <a href="#">סמים, אלכוהול וסיגריות</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li class="has-submenu">
-                                <a href="info.html">מה עוד צריך לדעת</a>
-                                <ul class="submenu">
-                                    <li class="submenu-item">
-                                        <a href="info.html#myth">מיתוסים ושאלות נפוצות</a>
-                                    </li>
-                                    <li class="submenu-item">
-                                        <a href="info.html#faq">שאלות נפוצות</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
+                            </nav>
+                        </div>
+                    </div>
                 </div>
-            </div>
+
+                <div class="col-1 no-padding">
+                </div>
+            </div> <!-- end row -->
         </div>
     </div>
     <div class="container">
         <div class="row" style="margin-top: 160px;">
-            <div class="col-8" style="overflow: hidden;">
-                <div class="circleBase" style="margin-bottom: -50px;">
+            <div class="col-5" style="overflow: hidden;">
+                <div class="circleBase">
                     <img src="images/girl-first.png" class="girl-home" alt="">
                 </div>
-
             </div>
-            <div class="col-4">
+            <div class="col-2">
+            </div>
+            <div class="col-5 pt-4 mt-4 pr-7">
                 <div class="home-slide">
                     <div class="my-slide">
                         <h1>
@@ -106,7 +73,7 @@
                             <br>
                             אם אומרים לך
                             <br>
-                            תביני כשתתבגרי
+                            מתי תתבגרי כבר
                         </h1>
                     </div>
                     <div class="my-slide">
@@ -133,53 +100,282 @@
                     </div>
                 </div>
             </div>
+            <div class="col-12" style="border-bottom: 20px solid #fff; margin-bottom: 30px;"></div>
         </div>
     </div>
 </header>
 
-<div class="container">
+<main class="container">
+    <a id="content-anchor" class="accessibility">Main Content</a>
     <div class="row">
-        <div class="col-1 bubbles-ver" style="background-position: right top;">
+        <div class="col-1 no-padding bubbles-ver" style="background-position: right top;">
         </div>
-        <div class="col-10">
+
+
+        <div class="col-10 no-padding">
+
+
             <div class="row">
-                <div class="col-4">
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+
+                <div class="col-4 small-padding">
+                    <article class="my-card">
+                        <header>
+                            <div class="row no-gutters">
+                                <div class="col-2">
+                                    <img src="images/eat-healthy.png" alt="">
+                                </div>
+                                <div class="col-8 text-center">
+                                    <h1>עשי ואל תעשי</h1>
+                                </div>
+                                <div class="col-2 text-center">
+                                            <span class="dots">
+                                                ...
+                                            </span>
+                                </div>
+                            </div>
+                        </header>
+                        <section>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card-image">
+                                        <img src="images/bowl-932980_1920.jpg" class="featured-image" alt="" data-id="heart-1">
+                                        <div class="heart-animation">
+                                            <img src="images/heart-animation.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="text-center">הכל על איך לאכול נכון</h3>
+                                        <div class="abstract" dir="rtl">
+                                            <div class="abstract-content">
+                                                <p>
+                                                    כל כמה זמן צריך לאכול?
+
+                                                    כמה פירות כדאי לי לאכול ביום? כמה כוסות מים.
+                                                    <br>
+                                                    ואיך נקניקיות קשורות לכל הסיפור?
+                                                </p>
+                                            </div>
+                                            <div class="abstract-content">
+                                                <p>
+                                                    aaaaaaaaaaaaaaa
+                                                    <br>
+                                                    aaaaaaaaaaaaaaa
+                                                    <br>
+                                                    aaaaaaaaaaaaaaaaaaa
+                                                </p>
+                                            </div>
+                                            <div class="abstract-content">
+                                                <p>
+                                                    bbbbbbbbbbbbbbbbbbbbbbbbb
+                                                    <br>
+                                                    bbbbbbbbbbbbbbbbbbbbb
+                                                    <br>
+                                                    bbbbbbbbbbbbbbbbbbbb
+                                                </p>
+                                            </div>
+                                            <div class="abstract-content">
+                                                <p>
+                                                    ccccccccccccccccccccc
+                                                    <br>
+                                                    ccccccccccccccccccccc
+                                                    <br>
+                                                    ccccccccccccccccccccc
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <footer>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="images/black-heart-empty.png" alt="" class="heart" width="40" id="heart-1">
+                                </div>
+                                <div class="col-10 text-left">
+                                    <a href="#" class="button">
+                                        "לחיות בריא" - פוסטים נוספים
+                                    </a>
+                                </div>
+                            </div>
+                        </footer>
+                    </article>
                 </div>
-                <div class="col-4">
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+
+                <div class="col-4 small-padding">
+                    <article class="my-card">
+                        <header>
+                            <div class="row no-gutters">
+                                <div class="col-2">
+                                    <img src="images/eat-healthy.png" alt="">
+                                </div>
+                                <div class="col-8 text-center">
+                                    <h1>עשי ואל תעשי</h1>
+                                </div>
+                                <div class="col-2 text-center">
+                                            <span class="dots">
+                                                ...
+                                            </span>
+                                </div>
+                            </div>
+                        </header>
+                        <section>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card-image">
+                                        <img src="images/bowl-932980_1920.jpg" class="featured-image" alt="" data-id="heart-1">
+                                        <div class="heart-animation">
+                                            <img src="images/heart-animation.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="text-center">הכל על איך לאכול נכון</h3>
+                                        <div class="abstract" dir="rtl">
+                                            <div class="abstract-content">
+                                                <p>
+                                                    כל כמה זמן צריך לאכול?
+
+                                                    כמה פירות כדאי לי לאכול ביום? כמה כוסות מים.
+                                                    <br>
+                                                    ואיך נקניקיות קשורות לכל הסיפור?
+                                                </p>
+                                            </div>
+                                            <div class="abstract-content">
+                                                <p>
+                                                    aaaaaaaaaaaaaaa
+                                                    <br>
+                                                    aaaaaaaaaaaaaaa
+                                                    <br>
+                                                    aaaaaaaaaaaaaaaaaaa
+                                                </p>
+                                            </div>
+                                            <div class="abstract-content">
+                                                <p>
+                                                    bbbbbbbbbbbbbbbbbbbbbbbbb
+                                                    <br>
+                                                    bbbbbbbbbbbbbbbbbbbbb
+                                                    <br>
+                                                    bbbbbbbbbbbbbbbbbbbb
+                                                </p>
+                                            </div>
+                                            <div class="abstract-content">
+                                                <p>
+                                                    ccccccccccccccccccccc
+                                                    <br>
+                                                    ccccccccccccccccccccc
+                                                    <br>
+                                                    ccccccccccccccccccccc
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <footer>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="images/black-heart-empty.png" alt="" class="heart" width="40" id="heart-1">
+                                </div>
+                                <div class="col-10 text-left">
+                                    <a href="#" class="button">
+                                        "לחיות בריא" - פוסטים נוספים
+                                    </a>
+                                </div>
+                            </div>
+                        </footer>
+                    </article>
                 </div>
-                <div class="col-4">
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-                    <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+
+                <div class="col-4 small-padding">
+                    <article class="my-card">
+                        <header>
+                            <div class="row no-gutters">
+                                <div class="col-2">
+                                    <img src="images/eat-healthy.png" alt="">
+                                </div>
+                                <div class="col-8 text-center">
+                                    <h1>עשי ואל תעשי</h1>
+                                </div>
+                                <div class="col-2 text-center">
+                                            <span class="dots">
+                                                ...
+                                            </span>
+                                </div>
+                            </div>
+                        </header>
+                        <section>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card-image">
+                                        <img src="images/bowl-932980_1920.jpg" class="featured-image" alt="" data-id="heart-1">
+                                        <div class="heart-animation">
+                                            <img src="images/heart-animation.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="text-center">הכל על איך לאכול נכון</h3>
+                                        <div class="abstract" dir="rtl">
+                                            <div class="abstract-content">
+                                                <p>
+                                                    כל כמה זמן צריך לאכול?
+
+                                                    כמה פירות כדאי לי לאכול ביום? כמה כוסות מים.
+                                                    <br>
+                                                    ואיך נקניקיות קשורות לכל הסיפור?
+                                                </p>
+                                            </div>
+                                            <div class="abstract-content">
+                                                <p>
+                                                    aaaaaaaaaaaaaaa
+                                                    <br>
+                                                    aaaaaaaaaaaaaaa
+                                                    <br>
+                                                    aaaaaaaaaaaaaaaaaaa
+                                                </p>
+                                            </div>
+                                            <div class="abstract-content">
+                                                <p>
+                                                    bbbbbbbbbbbbbbbbbbbbbbbbb
+                                                    <br>
+                                                    bbbbbbbbbbbbbbbbbbbbb
+                                                    <br>
+                                                    bbbbbbbbbbbbbbbbbbbb
+                                                </p>
+                                            </div>
+                                            <div class="abstract-content">
+                                                <p>
+                                                    ccccccccccccccccccccc
+                                                    <br>
+                                                    ccccccccccccccccccccc
+                                                    <br>
+                                                    ccccccccccccccccccccc
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <footer>
+                            <div class="row">
+                                <div class="col-2">
+                                    <img src="images/black-heart-empty.png" alt="" class="heart" width="40" id="heart-1">
+                                </div>
+                                <div class="col-10 text-left">
+                                    <a href="#" class="button">
+                                        "לחיות בריא" - פוסטים נוספים
+                                    </a>
+                                </div>
+                            </div>
+                        </footer>
+                    </article>
                 </div>
-                <div class="col-12 text-center pt-3">
+
+
+
+                <footer class="footer col-12 mt-3 pt-3 text-center">
+
                     <p>
                         כל הזכויות שמורות - 2019
                         |
@@ -195,22 +391,21 @@
                             מפת האתר
                         </a>
                     </p>
-                </div>
-            </div>
-        </div>
-        <div class="col-1 bubbles-ver">
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <footer class="footer">
 
-            </footer>
+                </footer>
+
+            </div>
+
+
         </div>
+        <div class="col-1 no-padding bubbles-ver" style="background-position: left top;">
+        </div>
+
     </div>
-</div>
+    <div class="row bubbles-h">
+
+    </div>
+</main>
 
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
