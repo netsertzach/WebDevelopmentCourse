@@ -134,7 +134,7 @@ header nav ul li a.active{
     transition: transform .4s; /* Animation */
 }
 .my-card .card-image img:hover{
-    transform: scale(1.01);
+    transform: scale(1.06);
 }
 .my-card .card-content,
 .my-card footer{
