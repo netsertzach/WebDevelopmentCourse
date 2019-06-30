@@ -7,7 +7,10 @@ body{
 p, a, h1, h2, h3, h4, h5, h6, span{
     font-family: inherit;
 }
-A:focus:hover {color: lime;}
+A:focus:hover {
+	
+    color: #175352;
+	}
 img{
     max-width: 100%;
 }
@@ -86,6 +89,7 @@ header nav ul li a{
 }
 header nav ul li a.active{
     font-weight: bold;
+	color: #175352;
     text-decoration: underline;
 }
 
@@ -211,11 +215,6 @@ header nav ul li a.active{
     margin-bottom: -50px;
     margin-right: 85px;
 }
-
-
-
-
-
 
 
 #skip{
