@@ -7,10 +7,12 @@ body{
 p, a, h1, h2, h3, h4, h5, h6, span{
     font-family: inherit;
 }
+
 A:focus:hover {
 	
-    color: #175352;
+    color: #175352 !important;
 	}
+	
 img{
     max-width: 100%;
 }
@@ -50,10 +52,6 @@ img{
 .main-logo img{
     height: 100px;
     transition: all .4s;
-}
-
-header.header{
-
 }
 
 
@@ -138,7 +136,7 @@ header nav ul li a.active{
     transition: transform .4s; /* Animation */
 }
 .my-card .card-image img:hover{
-    transform: scale(1.06);
+    transform: scale(1.04);
 }
 .my-card .card-content,
 .my-card footer{
