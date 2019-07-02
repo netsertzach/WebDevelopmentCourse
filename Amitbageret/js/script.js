@@ -46,6 +46,10 @@ $(window).scroll(function() {
     }
 });
 
+$('.home-slide').on('init', function (event, slick) {
+    $( '.my-slide' ).css( 'display', 'block' );
+});
+
 $('.home-slide').slick({
     dots: false,
     slidesToShow: 1,
@@ -56,7 +60,14 @@ $('.home-slide').slick({
     autoplay: true,
     autoplaySpeed: 5000,
     arrows: false,
-    initialSlide: 0
+    initialSlide: 0,
+    lazyLoad: 'progressive'
+});
+
+
+$('.abstract').on('init', function (event, slick) {
+    $( '.abstract-content' ).css( 'display', 'block' );
+    $( '.first-slide' ).css( 'visibility', 'visible' );
 });
 
 
@@ -69,7 +80,8 @@ $('.abstract').slick({
     arrows: true,
     centerMode: false,
     initialSlide: 0,
-    infinite: false
+    infinite: false,
+    lazyLoad: 'progressive'
     /*customPaging : function(slider, i) {
         var thumb = $(slider.$slides[i]).data();
         return '<a>*' + (i+1) + '</a>';
@@ -85,12 +97,51 @@ $( '.heart' ).on( 'click', function( event ) {
     }
 });
 
-$( "#target" ).dblclick(function() {
-    alert( "Handler for .dblclick() called." );
+
+$(".card-image").click(function (e) {
+    var $this = $(this);
+    if ($this.hasClass('clicked')){
+        $this.removeClass('clicked');
+        var id = $this.find( '.featured-image' ).data( 'id' );
+        if( $( '#'+id ).attr( 'src') === 'images/red-heart.png' ) {
+            $( '#'+id ).attr('src', 'images/black-heart-empty.png').css('z-index');
+        } else {
+            $( '#'+id ).attr('src', 'images/red-heart.png');
+        }
+
+        $this.find('.heart-animation').css( 'opacity', 0.8 ).css('z-index', 0);
+        setTimeout( function(){
+            $('.heart-animation').css( 'opacity', 0 );
+            setTimeout( function() {
+                $('.heart-animation').css('z-index', -1);
+            }, 750 );
+        }, 750 );
+        //here is your code for double click
+    } else{
+        $this.addClass('clicked');
+        setTimeout(function() {
+            if ($this.hasClass('clicked')){
+                $this.removeClass('clicked');
+                var info = $this.find( '.featured-image' ).data( 'id' );
+                var id = info.split( '-' )[1];
+                console.log( '#slick-'+ id );
+                $('#slick-'+ id ).slick("slickNext");
+                //your code for single click
+            }
+        }, 300 );
+    }
 });
 
 
-$( '.card-image' ).on( 'dblclick', function ( event ) {
+
+/*$( '.card-image' ).on( 'click', function ( event ) {
+    var info = $( this ).find( '.featured-image' ).data( 'id' );
+    var id = info.split( '-' )[1];
+    console.log( '#slick-'+ id );
+    $('#slick-'+ id ).slick("slickNext");
+});*/
+
+/*$( '.card-image' ).on( 'dblclick', function ( event ) {
     var id = $( this ).find( '.featured-image' ).data( 'id' );
     if( $( '#'+id ).attr( 'src') === 'images/red-heart.png' ) {
         $( '#'+id ).attr('src', 'images/black-heart-empty.png').css('z-index');
@@ -100,9 +151,12 @@ $( '.card-image' ).on( 'dblclick', function ( event ) {
 
     $( this ).find('.heart-animation').css( 'opacity', 0.8 ).css('z-index', 0);
     setTimeout( function(){
-        $('.heart-animation').css( 'opacity', 0 ).css('z-index', -1);
-    }, 950 );
-} );
+        $('.heart-animation').css( 'opacity', 0 );
+        setTimeout( function() {
+            $('.heart-animation').css('z-index', -1);
+        }, 750 );
+    }, 750 );
+} );*/
 
 /*
 adjustWidth();

@@ -16,7 +16,7 @@ img{
 }
 
 .mt-10{
-    margin-top: 5rem;
+    margin-top: 0;
 }
 
 .pr-6{
@@ -29,9 +29,6 @@ img{
     margin-top: -2rem;
 }
 
-.small-padding{
-
-}
 .no-padding{
     padding-right: 0;
     padding-left: 0;
@@ -41,7 +38,7 @@ img{
     background-color: rgba( 255, 255, 255, 0.9);
     position: fixed;
     top: 0;
-    width: 1336px;
+    max-width: 1336px;
     z-index: 999;
     transition: all 0.4s;
     right: 0;
@@ -85,7 +82,7 @@ header  nav > ul > li:last-child{
 }
 header nav ul li a{
     color: #175352;
-    font-size: 18px;
+    font-size: 16px;
 }
 header nav ul li a.active{
     font-weight: bold;
@@ -98,6 +95,9 @@ header nav ul li a.active{
     font-weight: normal;
 }
 
+.my-slide{
+    display: none;
+}
 .my-slide h1 {
     color: #175352;
     font-size: 54px;
@@ -168,6 +168,15 @@ header nav ul li a.active{
 
 }
 
+
+.abstract-content {
+    display: none;
+}
+.first-slide{
+    display: block;
+    visibility: hidden;
+    min-height: 100px;
+}
 .abstract-content p{
     font-size: 1.125rem;
 }
@@ -245,7 +254,7 @@ header nav ul li a.active{
     padding: 30px 45px;
     text-align: center;
     text-decoration: none;
-    letter-spacing: -4px !important;
+    letter-spacing: 1px !important;
     /* color information, edit this to suit the colors of your layout */
     color: #AEAEFE;
     background: transparent url(transparent.png) repeat scroll 0 0;
@@ -261,7 +270,6 @@ header nav ul li a.active{
 .accessibility-font {
     /* First font-size fallback to older browsers*/
     font-size: 1.25em;
-    font-size: 1.25rem;
 }
 
 .accessibility-contrast {
@@ -274,7 +282,12 @@ header nav ul li a.active{
         border-color: transparent;
     }
 }
-
+.mail {
+	text-align: center;
+	text-decoration: underline;
+	color: blue;
+	cursor: pointer;
+}
 @media (min-width: 576px) {
 
 }
@@ -286,11 +299,15 @@ header nav ul li a.active{
 
 
 @media (min-width: 992px) {
-.container {
+    .container {
         max-width: 1200px;
     }
     .my-slide h1 {
         font-size: 2.75rem;
+    }
+
+    .mt-10{
+        margin-top: 5rem;
     }
 }
 
@@ -305,6 +322,9 @@ header nav ul li a.active{
 	.my-card .card-image{
 		max-height:200px;
 	}
+    header nav ul li a{
+        font-size: 18px;
+    }
 }
 
 @media (min-width: 1400px) {
