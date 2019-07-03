@@ -286,6 +286,14 @@ header nav ul li a.active{
 	color: blue;
 	cursor: pointer;
 }
+
+.interactive {
+	width: 1336px;
+	height: 640px;
+	overflow: hidden;
+	background-color: white;
+}
+
 @media (min-width: 576px) {
 
 }
