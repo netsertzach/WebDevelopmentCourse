@@ -1,22 +1,26 @@
+ /*הגדרות עיצוב כלליות לתוכן העמוד*/
 body{
     direction: rtl;
     text-align: right;
     background-color: #ddb69c;
     font-family: Calibri, sans-serif, Arial, Verdana, "Trebuchet MS";
 }
+/* דאגנו להורשה לכל האלמנטים שמכילים טקסט בכדי שהאתר יציג באחידות את הפונטים המועדפים עלינו, , דבר החוסך בקוד ובזמן פיתוח */
 p, a, h1, h2, h3, h4, h5, h6, span{
     font-family: inherit;
 }
-
+/*בחירת הצבע בשימוש במקלדת בזמן הפוקוס לנגישות האתר */
 A:focus:hover {
 	
     color: #175352 !important;
-	}
-	
+}
+
+/*קביעת הגודל המקסימלי של התמונות באתר*/
 img{
     max-width: 100%;
 }
 
+/*נועד לעימוד ולעיצוב אלמנטים */
 .mt-10{
     margin-top: 0;
 }
@@ -36,6 +40,7 @@ img{
     padding-left: 0;
 }
 
+/*קביעת התפריט העליון כקבוע בגלילה הצבע הגודל והשקיפות שלו */
 .top-wrapper{
     background-color: rgba( 255, 255, 255, 0.9);
     position: fixed;
@@ -49,22 +54,20 @@ img{
 
 }
 
+/*קביעת הגודל ההתחלתי של הלוגו ומהירות הטרנזקציה שלו */
 .main-logo img{
     height: 100px;
     transition: all .4s;
 }
 
-
+/*עימוד ועיצוב הטקסט בתפריט העליון כטבלה*/
 header nav{
     padding-top: 12px;
     display: table;
     width: 100%;
 }
-
+/*display: flex; justify-content: space-between; align-items: center;*/
 header nav > ul {
-    /*display: flex;
-    justify-content: space-between;
-    align-items: center;*/
     display: table-row;
     width: 100%;
 }
@@ -75,6 +78,7 @@ header  nav > ul > li{
     border-left: 1px solid #202020;
     text-align: center;
 }
+/*ביטול הקו בתפריט לאחר המילה האחרונה*/
 header  nav > ul > li:last-child{
     border-left: none;
 }
@@ -87,12 +91,13 @@ header nav ul li a.active{
 	color: #175352;
     text-decoration: underline;
 }
-
+/*נועד לשנות סמן עכבר לכניסה לא מורשית, השתמשנו בו רק באמצע תהליך הפיתוח מאחר והאתר במצבו הנוכחי לא זקוק לו*/
 .disabled a{
     cursor: not-allowed;
     font-weight: normal;
 }
 
+/*עיצוב הטקסט בפתיח*/
 .my-slide{
     display: none;
 }
@@ -104,6 +109,7 @@ header nav ul li a.active{
     font-weight: bold;
 }
 
+/*עיצוב כרטיסיות הפוסטים בתוכן העמוד*/
 .my-card{
     background-color: #fff;
 }
@@ -135,6 +141,8 @@ header nav ul li a.active{
 .my-card .card-image img{
     transition: transform .4s; /* Animation */
 }
+
+/*אינטרקציה של שינוי גודל התמונה במעבר עכבר*/
 .my-card .card-image img:hover{
     transform: scale(1.04);
 }
@@ -155,6 +163,7 @@ header nav ul li a.active{
     z-index: 100;
 
 }
+/*עיצוב האינטרקציה של הלב לבן בלחיצה כפולה על תמונה המדמה פעימה*/
 .my-card .heart-animation{
     position: absolute;
     top: 20%;
@@ -166,18 +175,21 @@ header nav ul li a.active{
 
 }
 
-
+/*מטפל בבעיית טקסט גולש מהמסגרת של הכטיסיות בזמן רענון הדף*/
 .abstract-content {
     display: none;
 }
+
 .first-slide{
     display: block;
     visibility: hidden;
     min-height: 100px;
 }
+/*קביעת גודל הטקסט בקרוסלה*/
 .abstract-content p{
     font-size: 1.125rem;
 }
+/*קביעת מיקום נקודות שמציגות את מקומך בקרוסלה*/
 .slick-dots{
     bottom: -10px;
 }
@@ -185,6 +197,7 @@ header nav ul li a.active{
     margin-bottom: 20px;
 }
 
+/*טיפול בבעיית עברית בקרוסלה*/
 [dir='rtl'] .slick-next{
     left: -5px;
 }
@@ -202,6 +215,7 @@ header nav ul li a.active{
     padding: 0 20px;
 }
 
+/*עיצוב קישוטי הבועות באתר*/
 .bubbles-ver{
     background: url('../images/bubbles-vertical.png') repeat-y;
 }
@@ -212,6 +226,7 @@ header nav ul li a.active{
 
 }
 
+/*עיצוב עיגול הרקע בפתיח שעליו יושבת התמונה של ליאת*/
 .circleBase {
     border-radius: 50%;
     width: 400px;
@@ -223,7 +238,7 @@ header nav ul li a.active{
     margin-right: 85px;
 }
 
-
+/*הנגשת האתר באפשרות לדלג ישר לתוכן ולעקוף את התפריטים*/
 #skip{
     position: absolute;
     left: 0;
@@ -253,7 +268,7 @@ header nav ul li a.active{
     text-align: center;
     text-decoration: none;
     letter-spacing: 1px !important;
-    /* color information, edit this to suit the colors of your layout */
+/* color information, edit this to suit the colors of your layout */
     color: #AEAEFE;
     background: transparent url(transparent.png) repeat scroll 0 0;
     border: 1px dotted #ffb4db;
@@ -265,8 +280,9 @@ header nav ul li a.active{
     width: 10px
 }
 
+ /* First font-size fallback to older browsers*/
 .accessibility-font {
-    /* First font-size fallback to older browsers*/
+   
     font-size: 1.25em;
 }
 
@@ -280,6 +296,8 @@ header nav ul li a.active{
         border-color: transparent;
     }
 }
+
+/*נועד להצגת טקסט כקישור*/
 .mail {
 	text-align: center;
 	text-decoration: underline;
@@ -287,6 +305,7 @@ header nav ul li a.active{
 	cursor: pointer;
 }
 
+/*תבנית לייצוג האינטרקטיבי*/
 .interactive {
 	width: 1336px;
 	height: 640px;
@@ -294,6 +313,7 @@ header nav ul li a.active{
 	background-color: white;
 }
 
+/*הגדרות שונות לרספונסיביות לאתר*/
 @media (min-width: 576px) {
 
 }
