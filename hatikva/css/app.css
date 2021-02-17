@@ -1,0 +1,28 @@
+body{
+    background-color: #7f7f7f;
+}
+
+.title{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem 0;
+}
+.flex-video{
+    margin-bottom: 0;
+    padding-bottom: 57%;
+}
+
+.flex-video video {
+    border: 3px solid #fff;
+}
+
+.video-title{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 100;
+    color: #ddd;
+    text-shadow: 2px 2px #333;
+    font-size: 2rem;
+}
